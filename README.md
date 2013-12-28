@@ -24,6 +24,15 @@ ieee754.read = function (buffer, offset, isLE, mLen, nBytes)
 ieee754.write = function (buffer, value, offset, isLE, mLen, nBytes)
 ```
 
+The arguments mean the following:
+
+- buffer = the buffer
+- offset = offset into the buffer
+- value = value to set (only for write)
+- isLe = is little endian?
+- mLen = mantissa length
+- nBytes = number of bytes
+
 ## ieee754?
 
 The IEEE Standard for Floating-Point Arithmetic (IEEE 754) is a technical standard for floating-point computation. [Read more](http://en.wikipedia.org/wiki/IEEE_floating_point).
