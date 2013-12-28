@@ -24,6 +24,10 @@ exports.readIEEE754 = function (buffer, offset, isLE, mLen, nBytes)
 exports.writeIEEE754 = function (buffer, value, offset, isLE, mLen, nBytes)
 ```
 
+## ieee754?
+
+The IEEE Standard for Floating-Point Arithmetic (IEEE 754) is a technical standard for floating-point computation. [Read more](http://en.wikipedia.org/wiki/IEEE_floating_point).
+
 ## license
 
 MIT. Copyright (C) 2013 [Feross Aboukhadijeh](http://feross.org) & Romain Beauxis.
