@@ -6,7 +6,6 @@
   "dependencies": {
   },
   "devDependencies": {
-    "browserify": "*",
     "tape": "*"
   },
   "repository": {
