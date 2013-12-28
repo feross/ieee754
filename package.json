@@ -1,10 +1,9 @@
 {
   "name": "ieee754",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Read/write IEEE754 floating point numbers from/to a Buffer or array-like object",
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "tape": "*"
   },
