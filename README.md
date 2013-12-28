@@ -20,8 +20,8 @@ With [npm](https://npmjs.org) do:
 The `ieee754` object has the following functions:
 
 ```
-exports.readIEEE754 = function (buffer, offset, isLE, mLen, nBytes)
-exports.writeIEEE754 = function (buffer, value, offset, isLE, mLen, nBytes)
+ieee754.read = function (buffer, offset, isLE, mLen, nBytes)
+ieee754.write = function (buffer, value, offset, isLE, mLen, nBytes)
 ```
 
 ## ieee754?
