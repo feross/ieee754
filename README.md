@@ -33,10 +33,10 @@ The arguments mean the following:
 - mLen = mantissa length
 - nBytes = number of bytes
 
-## ieee754?
+## what is ieee754?
 
 The IEEE Standard for Floating-Point Arithmetic (IEEE 754) is a technical standard for floating-point computation. [Read more](http://en.wikipedia.org/wiki/IEEE_floating_point).
 
-## license
+## mit license
 
-MIT. Copyright (C) 2013 [Feross Aboukhadijeh](http://feross.org) & Romain Beauxis.
+Copyright (C) 2013 [Feross Aboukhadijeh](http://feross.org) & Romain Beauxis.
