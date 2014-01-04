@@ -28,7 +28,7 @@ The arguments mean the following:
 
 - buffer = the buffer
 - offset = offset into the buffer
-- value = value to set (only for write)
+- value = value to set (only for `write`)
 - isLe = is little endian?
 - mLen = mantissa length
 - nBytes = number of bytes
