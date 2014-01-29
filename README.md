@@ -4,7 +4,7 @@
 [![NPM](http://img.shields.io/npm/dm/ieee754.svg)](https://npmjs.org/package/ieee754)
 [![Gittip](http://img.shields.io/gittip/feross.svg)](https://www.gittip.com/feross/)
 
-## Read/write IEEE754 floating point numbers from/to a Buffer or array-like object.
+### Read/write IEEE754 floating point numbers from/to a Buffer or array-like object.
 
 [![testling badge](https://ci.testling.com/feross/ieee754.png)](https://ci.testling.com/feross/ieee754)
 
