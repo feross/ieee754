@@ -1,8 +1,8 @@
 # ieee754
-[![Build Status](http://img.shields.io/travis/feross/ieee754.svg)](https://travis-ci.org/feross/ieee754)
-[![NPM Version](http://img.shields.io/npm/v/ieee754.svg)](https://npmjs.org/package/ieee754)
-[![NPM](http://img.shields.io/npm/dm/ieee754.svg)](https://npmjs.org/package/ieee754)
-[![Gittip](http://img.shields.io/gittip/feross.svg)](https://www.gittip.com/feross/)
+[![Build Status](http://img.shields.io/travis/feross/ieee754.png)](https://travis-ci.org/feross/ieee754)
+[![NPM Version](http://img.shields.io/npm/v/ieee754.png)](https://npmjs.org/package/ieee754)
+[![NPM](http://img.shields.io/npm/dm/ieee754.png)](https://npmjs.org/package/ieee754)
+[![Gittip](http://img.shields.io/gittip/feross.png)](https://www.gittip.com/feross/)
 
 ### Read/write IEEE754 floating point numbers from/to a Buffer or array-like object.
 
