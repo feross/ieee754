@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "tape": "*"
+    "tape": "^4.0.0"
   },
   "repository": {
     "type": "git",
