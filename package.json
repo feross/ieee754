@@ -5,23 +5,13 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "tape": "^4.0.0"
+    "standard": "^3.7.3",
+    "tape": "^4.0.0",
+    "zuul": "^3.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/feross/ieee754.git"
-  },
-  "testling": {
-    "files": "test/*.js",
-    "browsers": [
-      "ie/6..latest",
-      "chrome/4..latest",
-      "firefox/3..latest",
-      "safari/5.1..latest",
-      "opera/11.0..latest",
-      "iphone/6",
-      "ipad/6"
-    ]
   },
   "keywords": [
     "ieee754",
@@ -35,7 +25,10 @@
     "Romain Beauxis <toots@rastageeks.org>"
   ],
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "standard && npm run test-node && npm run test-browser",
+    "test-browser": "zuul -- test/*.js",
+    "test-browser-local": "zuul --local -- test/*.js",
+    "test-node": "tape test/*.js"
   },
   "license": "MIT"
 }

@@ -1,8 +1,18 @@
-# ieee754 [![travis](https://img.shields.io/travis/feross/ieee754.svg)](https://travis-ci.org/feross/ieee754) [![npm](https://img.shields.io/npm/v/ieee754.svg)](https://npmjs.org/package/ieee754) [![downloads](https://img.shields.io/npm/dm/ieee754.svg)](https://npmjs.org/package/ieee754)
+# ieee754 [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][npm-url] [![gratipay][gratipay-image]][gratipay-url]
+
+[![saucelabs][saucelabs-image]][saucelabs-url]
+
+[travis-image]: https://img.shields.io/travis/feross/ieee754.svg?style=flat
+[travis-url]: https://travis-ci.org/feross/ieee754
+[npm-image]: https://img.shields.io/npm/v/ieee754.svg?style=flat
+[npm-url]: https://npmjs.org/package/ieee754
+[downloads-image]: https://img.shields.io/npm/dm/ieee754.svg?style=flat
+[gratipay-image]: https://img.shields.io/gittip/feross.svg?style=flat
+[gratipay-url]: https://www.gittip.com/feross
+[saucelabs-image]: https://saucelabs.com/browser-matrix/ieee754.svg
+[saucelabs-url]: https://saucelabs.com/u/ieee754
 
 ### Read/write IEEE754 floating point numbers from/to a Buffer or array-like object.
-
-[![testling badge](https://ci.testling.com/feross/ieee754.png)](https://ci.testling.com/feross/ieee754)
 
 ## install
 
