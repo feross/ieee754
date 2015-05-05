@@ -1,4 +1,4 @@
-# ieee754 [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][npm-url] [![gratipay][gratipay-image]][gratipay-url]
+# ieee754 [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][npm-url]
 
 [![saucelabs][saucelabs-image]][saucelabs-url]
 
@@ -7,8 +7,6 @@
 [npm-image]: https://img.shields.io/npm/v/ieee754.svg?style=flat
 [npm-url]: https://npmjs.org/package/ieee754
 [downloads-image]: https://img.shields.io/npm/dm/ieee754.svg?style=flat
-[gratipay-image]: https://img.shields.io/gittip/feross.svg?style=flat
-[gratipay-url]: https://www.gittip.com/feross
 [saucelabs-image]: https://saucelabs.com/browser-matrix/ieee754.svg
 [saucelabs-url]: https://saucelabs.com/u/ieee754
 
