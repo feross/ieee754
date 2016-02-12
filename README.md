@@ -2,11 +2,11 @@
 
 [![saucelabs][saucelabs-image]][saucelabs-url]
 
-[travis-image]: https://img.shields.io/travis/feross/ieee754.svg?style=flat
+[travis-image]: https://img.shields.io/travis/feross/ieee754/master.svg
 [travis-url]: https://travis-ci.org/feross/ieee754
-[npm-image]: https://img.shields.io/npm/v/ieee754.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/ieee754.svg
 [npm-url]: https://npmjs.org/package/ieee754
-[downloads-image]: https://img.shields.io/npm/dm/ieee754.svg?style=flat
+[downloads-image]: https://img.shields.io/npm/dm/ieee754.svg
 [saucelabs-image]: https://saucelabs.com/browser-matrix/ieee754.svg
 [saucelabs-url]: https://saucelabs.com/u/ieee754
 
