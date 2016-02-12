@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "standard": "^4.1.1",
+    "standard": "^6.0.4",
     "tape": "^4.0.0",
     "zuul": "^3.0.0"
   },
