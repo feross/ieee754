@@ -44,6 +44,4 @@ The IEEE Standard for Floating-Point Arithmetic (IEEE 754) is a technical standa
 
 ## license
 
-MIT License. Copyright (C) [Feross Aboukhadijeh](http://feross.org).
-
-Originally forked from a module by Romain Beauxis.
+BSD 3 Clause. Copyright (c) 2008, Fair Oaks Labs, Inc.
