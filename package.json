@@ -1,34 +1,37 @@
 {
   "name": "ieee754",
-  "version": "1.1.6",
   "description": "Read/write IEEE754 floating point numbers from/to a Buffer or array-like object",
-  "main": "index.js",
-  "dependencies": {},
+  "version": "1.1.6",
+  "author": {
+    "name": "Feross Aboukhadijeh",
+    "email": "feross@feross.org",
+    "url": "http://feross.org"
+  },
+  "contributors": [
+    "Romain Beauxis <toots@rastageeks.org>"
+  ],
   "devDependencies": {
     "standard": "*",
     "tape": "^4.0.0",
     "zuul": "^3.0.0"
   },
+  "keywords": [
+    "IEEE 754",
+    "buffer",
+    "convert",
+    "floating point",
+    "ieee754"
+  ],
+  "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/feross/ieee754.git"
   },
-  "keywords": [
-    "ieee754",
-    "IEEE 754",
-    "floating point",
-    "buffer",
-    "convert"
-  ],
-  "author": "Feross Aboukhadijeh <feross@feross.org> (http://feross.org/)",
-  "contributors": [
-    "Romain Beauxis <toots@rastageeks.org>"
-  ],
   "scripts": {
     "test": "standard && npm run test-node && npm run test-browser",
     "test-browser": "zuul -- test/*.js",
     "test-browser-local": "zuul --local -- test/*.js",
     "test-node": "tape test/*.js"
-  },
-  "license": "MIT"
+  }
 }

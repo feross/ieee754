@@ -42,6 +42,8 @@ The arguments mean the following:
 
 The IEEE Standard for Floating-Point Arithmetic (IEEE 754) is a technical standard for floating-point computation. [Read more](http://en.wikipedia.org/wiki/IEEE_floating_point).
 
-## mit license
+## license
 
-Copyright (C) 2013 [Feross Aboukhadijeh](http://feross.org) & Romain Beauxis.
+MIT License. Copyright (C) [Feross Aboukhadijeh](http://feross.org).
+
+Originally forked from a module by Romain Beauxis.
