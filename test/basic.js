@@ -21,3 +21,24 @@ test('write float', function (t) {
 
   t.end()
 })
+
+test('read double', function (t) {
+  var value = 12345.123456789
+  var buf = Buffer.alloc(8)
+  buf.writeDoubleLE(value, 0)
+  var num = ieee754.read(buf, 0, true, 52, 8)
+  t.ok(Math.abs(num - value) < EPSILON)
+
+  t.end()
+})
+
+test('write double', function (t) {
+  var value = 12345.123456789
+  var buf = Buffer.alloc(8)
+  ieee754.write(buf, value, 0, true, 52, 8)
+
+  var num = buf.readDoubleLE(0)
+  t.ok(Math.abs(num - value) < EPSILON)
+
+  t.end()
+})
