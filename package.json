@@ -13,7 +13,7 @@
   "devDependencies": {
     "standard": "*",
     "tape": "^4.0.0",
-    "zuul": "^3.0.0"
+    "zuul": "^3.10.1"
   },
   "keywords": [
     "IEEE 754",
