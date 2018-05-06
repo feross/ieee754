@@ -11,7 +11,7 @@
     "Romain Beauxis <toots@rastageeks.org>"
   ],
   "devDependencies": {
-    "airtap": "0.0.4",
+    "airtap": "0.0.5",
     "standard": "*",
     "tape": "^4.0.0"
   },
