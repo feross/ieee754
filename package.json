@@ -1,7 +1,7 @@
 {
-  "name": "ieee754",
+  "name": "@xtuc/ieee754",
   "description": "Read/write IEEE754 floating point numbers from/to a Buffer or array-like object",
-  "version": "1.1.12",
+  "version": "1.2.0",
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
@@ -13,7 +13,10 @@
   "devDependencies": {
     "airtap": "0.0.7",
     "standard": "*",
-    "tape": "^4.0.0"
+    "tape": "^4.0.0",
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.54"
   },
   "keywords": [
     "IEEE 754",
@@ -23,7 +26,8 @@
     "ieee754"
   ],
   "license": "BSD-3-Clause",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/feross/ieee754.git"
@@ -33,5 +37,6 @@
     "test-browser": "airtap -- test/*.js",
     "test-browser-local": "airtap --local -- test/*.js",
     "test-node": "tape test/*.js"
-  }
+  },
+  "prepublish": "babel --plugins @babel/plugin-transform-modules-commonjs index.js -o dist/index.cjs.js"
 }
