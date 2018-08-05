@@ -1,7 +1,7 @@
 {
-  "name": "@xtuc/ieee754",
+  "name": "ieee754",
   "description": "Read/write IEEE754 floating point numbers from/to a Buffer or array-like object",
-  "version": "1.2.0",
+  "version": "1.1.12",
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
@@ -33,10 +33,11 @@
     "url": "git://github.com/feross/ieee754.git"
   },
   "scripts": {
+    "build": "babel index.js -o dist/index.cjs.js",
     "test": "standard && npm run test-node && npm run test-browser",
     "test-browser": "airtap -- test/*.js",
     "test-browser-local": "airtap --local -- test/*.js",
     "test-node": "tape test/*.js",
-    "prepublish": "babel --plugins @babel/plugin-transform-modules-commonjs index.js -o dist/index.cjs.js"
+    "prepublish": "npm run build"
   }
 }

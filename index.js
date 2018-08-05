@@ -1,4 +1,4 @@
-export function read(buffer, offset, isLE, mLen, nBytes) {
+export function read (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = (nBytes * 8) - mLen - 1
   var eMax = (1 << eLen) - 1
@@ -31,7 +31,7 @@ export function read(buffer, offset, isLE, mLen, nBytes) {
   return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
 }
 
-export function write(buffer, value, offset, isLE, mLen, nBytes) {
+export function write (buffer, value, offset, isLE, mLen, nBytes) {
   var e, m, c
   var eLen = (nBytes * 8) - mLen - 1
   var eMax = (1 << eLen) - 1
