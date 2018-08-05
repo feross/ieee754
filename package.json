@@ -13,7 +13,10 @@
   "devDependencies": {
     "airtap": "0.1.0",
     "standard": "*",
-    "tape": "^4.0.0"
+    "tape": "^4.0.0",
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.54"
   },
   "keywords": [
     "IEEE 754",
@@ -23,15 +26,18 @@
     "ieee754"
   ],
   "license": "BSD-3-Clause",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/feross/ieee754.git"
   },
   "scripts": {
+    "build": "mkdir -p dist && babel index.js -o dist/index.cjs.js",
     "test": "standard && npm run test-node && npm run test-browser",
     "test-browser": "airtap -- test/*.js",
     "test-browser-local": "airtap --local -- test/*.js",
-    "test-node": "tape test/*.js"
+    "test-node": "tape test/*.js",
+    "prepublish": "npm run build"
   }
 }
