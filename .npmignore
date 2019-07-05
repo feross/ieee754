@@ -1,3 +1,4 @@
 .airtap.yml
+.github/
 .travis.yml
 test/
