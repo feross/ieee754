@@ -46,3 +46,12 @@ test('write double', function (t) {
   t.ok(Math.abs(num - value) < EPSILON)
   t.end()
 })
+
+test('write double with NaN', function (t) {
+  var value = NaN
+  var buf = Buffer.alloc(8)
+
+  ieee754.write(buf, value, 0, true, 52, 8)
+  t.ok(buf.toString('hex') === '000000000000f87f')
+  t.end()
+})

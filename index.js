@@ -44,7 +44,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   value = Math.abs(value)
 
   if (isNaN(value) || value === Infinity) {
-    m = isNaN(value) ? 1 : 0
+    m = 0
     e = eMax
   } else {
     e = Math.floor(Math.log(value) / Math.LN2)
@@ -76,7 +76,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
   for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8) {}
 
-  e = (e << mLen) | m
+  e = (e << mLen) | (isNaN(value) ? 8 : m)
   eLen += mLen
   for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8) {}
 
