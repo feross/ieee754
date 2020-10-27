@@ -13,7 +13,7 @@
   "devDependencies": {
     "airtap": "^2.0.3",
     "standard": "*",
-    "tape": "^4.11.0"
+    "tape": "^5.0.0"
   },
   "keywords": [
     "IEEE 754",
