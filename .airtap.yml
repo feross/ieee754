@@ -1,6 +1,6 @@
 loopback: airtap.local
 scripts:
-  - "./test/_polyfill.js"
+  - ./test/_polyfill.js
 browsers:
   - name: chrome
     version: latest
@@ -8,9 +8,9 @@ browsers:
     version: latest
   - name: safari
     version: latest
-  - name: ie
-    version: latest
   - name: microsoftedge
     version: latest
   - name: iphone
+    version: latest
+  - name: android
     version: latest
