@@ -1,7 +1,7 @@
 {
   "name": "ieee754",
   "description": "Read/write IEEE754 floating point numbers from/to a Buffer or array-like object",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
