@@ -24,6 +24,7 @@
   ],
   "license": "BSD-3-Clause",
   "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/feross/ieee754.git"
