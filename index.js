@@ -1,13 +1,13 @@
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
-  var e, m
-  var eLen = (nBytes * 8) - mLen - 1
-  var eMax = (1 << eLen) - 1
-  var eBias = eMax >> 1
-  var nBits = -7
-  var i = isLE ? (nBytes - 1) : 0
-  var d = isLE ? -1 : 1
-  var s = buffer[offset + i]
+  let e, m
+  const eLen = (nBytes * 8) - mLen - 1
+  const eMax = (1 << eLen) - 1
+  const eBias = eMax >> 1
+  let nBits = -7
+  let i = isLE ? (nBytes - 1) : 0
+  const d = isLE ? -1 : 1
+  let s = buffer[offset + i]
 
   i += d
 
@@ -41,14 +41,14 @@ exports.read = function (buffer, offset, isLE, mLen, nBytes) {
 }
 
 exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
-  var e, m, c
-  var eLen = (nBytes * 8) - mLen - 1
-  var eMax = (1 << eLen) - 1
-  var eBias = eMax >> 1
-  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
-  var i = isLE ? 0 : (nBytes - 1)
-  var d = isLE ? 1 : -1
-  var s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
+  let e, m, c
+  let eLen = (nBytes * 8) - mLen - 1
+  const eMax = (1 << eLen) - 1
+  const eBias = eMax >> 1
+  const rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
+  let i = isLE ? 0 : (nBytes - 1)
+  const d = isLE ? 1 : -1
+  const s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
 
   value = Math.abs(value)
 
