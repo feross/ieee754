@@ -24,13 +24,13 @@ npm install ieee754
 
 ## methods
 
-`var ieee754 = require('ieee754')`
+`import {read, write} from 'ieee754'`
 
 The `ieee754` object has the following functions:
 
 ```
-ieee754.read = function (buffer, offset, isLE, mLen, nBytes)
-ieee754.write = function (buffer, value, offset, isLE, mLen, nBytes)
+read = function (buffer, offset, isLE, mLen, nBytes)
+write = function (buffer, value, offset, isLE, mLen, nBytes)
 ```
 
 The arguments mean the following:
